@@ -93,11 +93,31 @@
 <li>$||x||_2 = 1$  </li>
 </ul>
 <p>如果$x^Ty =0$则称$x$和$y$互相正交，如果$x$和$y$同时具有单位向量则称x和y标准正交。</p>
-<h2 id="数字信号处理"><a href="#数字信号处理" class="headerlink" title="数字信号处理"></a>数字信号处理</h2>
+<h2 id="学习使用Pytorch的心得"><a href="#学习使用Pytorch的心得" class="headerlink" title="学习使用Pytorch的心得"></a>学习使用Pytorch的心得</h2><ul>
+<li><p>一般情况放下，对于一个深度学习任务，应该按照</p>
+<ul>
+<li><p>（1）建立基本Basic_Module模型，一般包含: </p>
+<pre><code>def __init(self)__:
+    super(Basic_Module,self).__init__()
+    self.module_name = str(type(self))
+def load(self,path):
+    self.load_state_dict(t.load(path))
+def save(self,name =None):
+    if(name ==None):
+        ##保存模型
+</code></pre></li>
+<li><p>（2）对于数据的处理和加载:使用 torch.utils.data.dataloader 对数据进行保存和加载。一般继成data.Dataset类，使用 torchvision 中的 transforms</p>
+</li>
+<li><p>（3）</p>
+</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/21/深度学习笔记/" data-id="cjr5xi30h000088uspxffvkhd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/21/深度学习笔记/" data-id="cjsr7k9lb0001v8usudokjceo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -158,7 +178,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/21/hello-world/" data-id="cjr5xi30n000188us5sa47llh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/21/hello-world/" data-id="cjsr7k9kq0000v8usd4ql1l3l" class="article-share-link">Share</a>
       
       
     </footer>
